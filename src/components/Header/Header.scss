@@ -1,0 +1,70 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ff597b;
+
+    a {
+      color: wheat;
+      font-size: 18px;
+      font-weight: bold;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 300px;
+      border-radius: 11px;
+      border: none;
+      padding: 0.5rem;
+      outline: none;
+    }
+
+    svg {
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-cart {
+      position: relative;
+    }
+
+    &-count {
+      background-color: red;
+      position: absolute;
+      color: white;
+      padding: 2.5px 4px;
+      border-radius: 50%;
+      top: 15px;
+      right: 52px;
+      font-size: 9px;
+      font-weight: bold;
+    }
+
+    &-btn {
+      background: none;
+      border: none;
+    }
+
+    svg {
+      color: white;
+    }
+  }
+}
