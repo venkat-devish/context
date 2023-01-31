@@ -12,6 +12,7 @@ const Context = ({ children }) => {
     image: faker.image.business(),
     inStock: Math.floor(Math.random() * 7),
     ratings: Math.floor(Math.random() * 5),
+    fastDelivery: faker.datatype.boolean(),
   }));
 
   const [state, dispatchFn] = useReducer(cartReducer, {

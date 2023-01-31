@@ -8,6 +8,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const dropDownHandler = () => {
     setIsOpen((prev) => !prev);
   };

@@ -1,6 +1,7 @@
 import React from "react";
 import { cartState } from "../../context/CartContext";
 import Card from "../../organisms/Card/Card";
+import Filters from "../Filters/Filters";
 import "./Home.scss";
 
 const Home = () => {
@@ -8,9 +9,11 @@ const Home = () => {
     state: { products },
   } = cartState();
 
+  console.log(products);
+
   return (
     <div className="home__container">
-      Filters
+      <Filters />
       <div className="home__products">
         {products.map((product) => (
           <Card
