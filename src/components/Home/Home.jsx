@@ -21,6 +21,8 @@ const Home = () => {
             image={product.image}
             title={product.prodName}
             price={product.price.substring(0, 3)}
+            fastDelivery={product.fastDelivery}
+            inStock={product.inStock}
           />
         ))}
       </div>
